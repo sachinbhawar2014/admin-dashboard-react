@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-function GoogleSheetsComponent() {
+function Dashboard() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -65,11 +65,9 @@ function GoogleSheetsComponent() {
 
     return (
         <div>
-            {/* Render your data here */}
-            {/* <pre>{data}</pre> */}
             <pre>{JSON.stringify(data, null, 2)}</pre>
         </div>
     );
 }
 
-export default GoogleSheetsComponent;
+export default Dashboard;
