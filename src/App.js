@@ -1,12 +1,14 @@
 import React, { Suspense } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./pages/login";
+import GoogleSheetsComponent from "./components/datepicker";
 
 function App() {
     return (
         <BrowserRouter>
-            <switch>
-                <Route path="/" Component={LoginPage} />
-            </switch>
+            <Routes>
+                <Route path="/" Component={GoogleSheetsComponent} />
+            </Routes>
         </BrowserRouter>
     );
 }
